@@ -34,3 +34,5 @@ sudo ./tcpstat_noether -i tun0
 # All packets processed will be written to file ./tun0.pcap
 sudo ./tcpstat_noether_dbg -i tun0
 
+# Signals: receipt of SIGUSR1 will print current packet counts to stdout
+sudo pkill --signal SIGUSR1 -x tcpstat
